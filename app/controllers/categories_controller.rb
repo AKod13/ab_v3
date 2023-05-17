@@ -13,10 +13,12 @@ class CategoriesController < ApplicationController
       render 'new'
     end
   end
+
   def index
   end
 
   def show
+    @category = Category.find(params[:id])
   end
 
   private
